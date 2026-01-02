@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+.review-container {
+    width: 420px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+
+.review-container h2,
+.review-container h3 {
+    text-align: center;
+    margin-bottom: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+
+.review-container input,
+.review-container textarea,
+.review-container select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    backdrop-filter: blur(8px);
+}
+
+.review-container input::placeholder,
+.review-container textarea::placeholder {
+    color: #e0e0e0;
+}
+
+
+.review-container textarea {
+    resize: none;
+    height: 90px;
+}
+
+
+.review-container select {
+    cursor: pointer;
+}
+
+
+.review-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.review-container button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 152, 0, 0.4);
+}
+
+
+.review-list {
+    margin-top: 25px;
+}
+
+
+.review-card {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 14px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    border-left: 4px solid #ff9800;
+    backdrop-filter: blur(6px);
+    animation: fadeIn 0.4s ease;
+}
+
+
+.review-card h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.review-card p {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #f1f1f1;
+}
+
+
+.review-card p:last-child {
+    color: #ffeb3b;
+    font-weight: 600;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
